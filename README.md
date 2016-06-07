@@ -1,2 +1,2 @@
 # MyTryJsp
-Some Jsp or java exercise
+Some Jsp and java exercise
