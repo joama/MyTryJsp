@@ -1,0 +1,2 @@
+127.0.0.1 - - [21/Apr/2016:00:01:19 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Apr/2016:00:01:20 +0800] "GET /AppleDemo/WEB-INF/classes/chp04/Database.java HTTP/1.1" 404 992

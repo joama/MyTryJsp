@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_73" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="chapter1.diary.bean.Diary">
+    <void property="authorName">
+     <string>第一篇日記</string>
+    </void>
+    <void property="content">
+     <string>第一篇日記</string>
+    </void>
+    <void property="time">
+     <object class="java.util.GregorianCalendar">
+      <void property="time">
+       <object class="java.util.Date">
+        <long>1334357209312</long>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="title">
+     <string>JavaWeb愛好者</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="chapter1.diary.bean.Diary">
+    <void property="authorName">
+     <string>第二篇日記</string>
+    </void>
+    <void property="content">
+     <string>第二篇日記</string>
+    </void>
+    <void property="time">
+     <object class="java.util.GregorianCalendar">
+      <void property="time">
+       <object class="java.util.Date">
+        <long>1334360319091</long>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="title">
+     <string>JavaWeb愛好者</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="chapter1.diary.bean.Diary">
+    <void property="authorName">
+     <string>test</string>
+    </void>
+    <void property="content">
+     <string>123456</string>
+    </void>
+    <void property="time">
+     <object class="java.util.GregorianCalendar">
+      <void property="time">
+       <object class="java.util.Date">
+        <long>1463405517651</long>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="title">
+     <string>JavaWeb愛好者</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
