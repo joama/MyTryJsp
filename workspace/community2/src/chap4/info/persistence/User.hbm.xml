@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/6/15 ?U?? 05:14:59 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="chap4.info.persistence">
+    <class name="chap4.info.persistence.User" table="USER">
+        <id name="id" length="32" type="java.lang.String">
+            <column name="ID" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="userName" length="32" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" length="32" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="realName" length="32" type="java.lang.String">
+            <column name="REALNAME" />
+        </property>
+        <set name="informations" table="INFORMATION" inverse="false" lazy="true">
+            <key>
+                <column name="publishingUser" />
+            </key>
+            <one-to-many class="chap4.info.persistence.Information" />
+        </set>
+    </class>
+    <query name="getUserByUserName">
+    	<![CDATA[
+    		from User where userName = ?
+    	]]>
+    </query>
+</hibernate-mapping>

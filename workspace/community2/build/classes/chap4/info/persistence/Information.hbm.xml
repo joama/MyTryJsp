@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/6/15 ?U?? 05:14:59 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="chap4.info.persistence.Information" table="INFORMATION">
+        <id name="id" type="java.lang.String">
+            <column name="ID" length="32"/>
+            <generator class="uuid.hex" />
+        </id>
+        <property name="title" length="64" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="content" length="1024" type="java.lang.String">
+            <column name="CONTENT" />
+        </property>
+        <property name="publishingTime" type="timestamp">
+            <column name="PUBLISHINGTIME" />
+        </property>
+        <many-to-one name="publishingUser" class="chap4.info.persistence.User" fetch="join">
+            <column name="PUBLISHINGUSER" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
