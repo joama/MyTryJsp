@@ -21,7 +21,7 @@ public class HibernateFilter implements Filter{
 	private static Log log = LogFactory.getLog(HibernateFilter.class);
 	
 	/*
-	 * 篩檢城市的主要方法
+	 * 篩檢程式的主要方法
 	 * 用於實現Hibernate交易的開始和完成，並設定request編碼
 	 * */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
@@ -67,5 +67,9 @@ public class HibernateFilter implements Filter{
 	 * 篩檢程式的銷毀方法
 	 * 用於釋放篩檢程式所申請的資源
 	 * */
-	public void destory(){}
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		
+	}
 }

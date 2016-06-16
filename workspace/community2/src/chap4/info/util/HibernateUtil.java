@@ -1,7 +1,7 @@
 package chap4.info.util;
 
 import org.apache.commons.logging.Log;
-import org.apache.commons.loggin.LogFactory;
+import org.apache.commons.logging.LogFactory;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -11,7 +11,7 @@ import org.hibernate.cfg.Configuration;
  * */
 public class HibernateUtil {
 	// 靜態日誌物件的實體，用來輸出日誌資訊
-	private static org.infinispan.util.logging.Log log = LogFactory.getLog(HibernateUtil.class);
+	private static Log log = LogFactory.getLog(HibernateUtil.class);
 	
 	// 靜態Configuration和SessionFactory物件的實體(全域為一的)
 	private static Configuration configuration;
@@ -55,7 +55,7 @@ public class HibernateUtil {
 		
 		// 清除靜態變數
 		configuration = null;
-		sessoinFactory = null;
+		sessionFactory = null;
 	}
 	
 	// 提交目前交易，並開始一個新的交易
