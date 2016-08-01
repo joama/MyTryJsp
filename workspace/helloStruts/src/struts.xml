@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定struts2設定檔的DTD資訊 -->
+<!DOCTYPE struts PUBLIC 
+"-//apache Software Foundation//DTD Struts Configuation 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- struts2的action必須放在指定的套件空間下定義 -->
+	<package name="helloStruts" extends="struts-default">
+		<!-- 定義action和實際類別的對應關係 -->
+		<action name="HelloWorld" class="com.hello.action.HelloWorldAction">
+			<!-- 定義處理的結果和JSP頁面的對應關係 -->
+			<result name="success">/success.jsp</result>
+		</action>
+	</package>
+</struts>
