@@ -1,0 +1,11 @@
+#Mon Aug 15 20:27:43 CST 2016
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1471264063895
+c=0
+cmp=usage
+a=finishWizard
+cl=org.eclipse.php.internal.ui.wizards.PHPProjectCreationWizard
+v=2.1.0
+s=0

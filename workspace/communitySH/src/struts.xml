@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定strut2設定檔的DTD資訊 -->
+<!DOCTYPE struts PUBLIC
+"-//apache Software Foundation//DTD Struts Conifiguation 2.1//EN"
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- struts2的action必須放在指定的套件空間下定義 -->
+<struts>
+	<package name="global" extends="struts-default">
+		<!-- 定義action和實際類別的對應關係 -->
+		<action name="information_*" method="{1}" class="action.InformationAction">
+			<result neme="input">/WEB-INF/pages/addInformaiton.jsp</result>
+			<result type="chain">information_list</result>
+			<result name="main">/WEB-INF/pages/main.jsp</result>
+			<result name="edit">/WEB-INF/pages/editInformation.jsp</result>
+			<result name="detail">/WEB-INF/pages/informationDetail.jsp</result>
+			<result name="list">/WEB-INF/pages/informationList.jsp</result>
+		</action>
+	</package>
+</struts>
